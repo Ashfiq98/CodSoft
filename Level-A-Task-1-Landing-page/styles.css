@@ -1,0 +1,158 @@
+body {
+    background: linear-gradient(300deg, #01b2fe, #009459, #72efeb);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+nav {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #0d1110;
+    color: white;
+    border-radius: 5px;
+}
+
+.full-width-photo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.full-width-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-right: 20px;
+    max-width: 430px;
+    max-height: 580px;
+    min-width: 140px;
+    min-height: 150px;
+}
+
+.card h2 {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.rounded-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.rounded-card {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.train-head {
+    text-align: center;
+    color: rgb(8, 46, 41);
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.about-content p {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-content img {
+    width: 42%;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+}
